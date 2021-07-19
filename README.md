@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ramarquesjr/graph-tool_guide/HEAD?filepath=Basico.ipynb)
+
 # Guia graph-tool
 
 Breves anotações do estudo da ferramenta [**graph-tool**](https://graph-tool.skewed.de/static/doc/index.html) para seu uso básico e entendimento de algumas de suas funcionalidades.
@@ -44,12 +46,9 @@ conda env create -f environment.yml
 conda activate exemplo
 ```
 
-Foram adicionados também dois arquivos para utilização do _Docker_ para que se produza uma imagem baseado em _Ubuntu (focal)_. Neste ambiente já se instalou o _graph-tool_ e outras ferramentas como o _Networkx_ e o _igraph_.
+Foi adicionado um arquivo para utilização do _Docker_ para que se produza uma imagem baseada em _Ubuntu (focal)_. Neste ambiente já se instalou o _graph-tool_ e outras ferramentas como o _Networkx_ e o _igraph_.
 
 ```bash
 docker build -t ubuntu-tool -f files/ubuntu-focal.dck
 docker run -itd --name ubuntu-graph -p 8888:8888 -v /home/ronaldoalves/Documentos/mestrado/aulas/:/home/user/labs ubuntu-tool 
 ```
-
-
-
