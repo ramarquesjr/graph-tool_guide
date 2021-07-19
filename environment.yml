@@ -1,0 +1,14 @@
+name: exemplo
+channels:
+  - conda-forge
+dependencies:
+  - graph-tool
+  - jupyterlab
+  - seaborn
+  - rise
+  - xorg-libxcursor
+  - xorg-libxdamage
+  - xorg-libxcomposite
+  - xorg-libxrandr
+  - xorg-libxinerama
+
