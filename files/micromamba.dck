@@ -1,0 +1,6 @@
+FROM mambaorg/micromamba:0.13.1
+RUN micromamba install -y -n base -c conda-forge progressbar graph-tool psutil jupyterlab seaborn xorg-libxcursor xorg-libxdamage xorg-libxcomposite xorg-libxrandr xorg-libxinerama && \
+micromamba clean --all --yes
+WORKDIR /root
+EXPOSE 8888
+ENTRYPOINT ["jupyter", "notebook", "--ip", "0.0.0.0"]
