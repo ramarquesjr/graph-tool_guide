@@ -6,7 +6,6 @@ dependencies:
   - jupyterlab
   - seaborn
   - rise
-  - ndlib
   - igraph
   - networkx
   - xorg-libxcursor
